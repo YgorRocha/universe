@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+color: #E1E1E6;
+Font-family: 'Roboto', 'sans serif';
+}
+
+/*Alteração de imagens de fundo*/
+.bg-pagina1{
+    background-image: url("/imgs/mountains-universe-1.png");
+    background-size: cover;
+}
+
+.bg-pagina2{
+    background-image: url("/imgs/mountains-universe02.png");
+    background-size: cover;
+}
+.bg-pagina3{
+    background-image: url("/imgs/mountains-universe-3.png");
+    background-size: cover;
+}
+
+/*links de navegação*/
+nav{
+    display: flex;
+    gap: 4.2rem;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 7.2rem;
+
+    margin-left: clamp(1rem, 1rem + 4vw, 10.5rem);
+
+}
+
+nav a{
+    font-size: clamp(1rem, 1rem + 2vw, 2.2rem);
+
+    text-decoration: none;
+    color: #FFFF ;
+}
+button a{
+    text-decoration: none;
+    color: #FFFF ;
+}
+nav a:hover{
+    color: #E1E1E6;
+    font-weight:700;
+
+    scale: 1.2;
+    transition: 1s;
+}
+
+.container{
+    display:grid;
+    height: 100vh;
+}
+.pageHome {
+    margin-top: -20px;
+    width: 50rem;
+    align-self: center;
+    justify-self: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Páginas */
+
+.pageUniverse, .pageExploration{
+    width: 64.8rem;
+    margin-top: 10.3rem;
+    margin-left: clamp(1rem, 1rem + 4vw, 10.5rem);
+}
+
+.pageUniverse 
+h1,
+.pageExploration h1{
+    margin-bottom: 1.4rem;
+}
+
+h1{
+    font-weight:700;
+    font-size: clamp(2rem, 5rem + 8vw, 5rem);
+}
+
+p{
+    Font-size: 18px;
+    width: clamp(10rem, 20rem + 40vw, 70rem);
+}
+
+main button{
+    font-size: 1.5rem;
+    margin-top: 2.4rem;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+}
+
+main button:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 1s;
+}
